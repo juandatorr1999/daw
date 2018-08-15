@@ -1,0 +1,25 @@
+body{
+	background: black;
+}
+main{
+	color:blue;
+}
+.menu{
+	padding-left:40%;
+	background: orange;
+}
+.menu-item:hover{
+	background: green;
+}
+h2{
+	color:red;
+}
+li:nth-child(odd) {
+
+    background: yellow;
+}
+footer{
+	color:white;
+}
+
+
