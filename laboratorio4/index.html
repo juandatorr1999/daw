@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<title>Home</title>
+		<meta charset="UTF-8">
+	</head>
+	<body>
+		<header>
+			Laboratorio 4 - Home
+		</header>
+		<nav class="menu">
+			<a class="menu-item" href="/">Home</a>
+			<a class="menu-item" href="/">Preguntas</a>
+		</nav>
+		<main>
+			<section>
+				<h2>Pruebas Nucleares</h2>
+				<ul class="collection">
+					<li class="collection-item"><button onclick="tabla()">Tabla de números 1 a n con cuadrados y cubos </button></li>
+					<li class="collection-item"><button onclick="guess()">Avr atínale</button></li>
+					<li class="collection-item"><input type="number" id="arraysize"><button onclick="generarArray()">Generar arreglo </button></li>
+					<li class="collection-item"><input type="number" id="columnas"><input type="number" id="filas"><button onclick="matrix()">Generar Matriz MxN</button></li>
+					<li class="collection-item"><input type="number" id="palindromo"> <button onclick="palindromo()">Invertir</button></li>
+					<li class="collection-item"><input type="number" id="fibot"><button onclick="generarFibo()">Generar n término fibonacci</button></li>
+
+				</ul>
+				<div id="resultado"></div>
+			</section>
+
+		</main>
+
+		<footer>
+			DAW 2018 - Etan Imanol Castro Aldrete A01209675
+		</footer>
+		<script  src="main.js"></script>
+	</body>
+</html>
