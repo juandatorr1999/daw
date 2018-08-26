@@ -3,7 +3,7 @@ let password = function(){
 	let msg = "Mala seguridad usa carácteres alpanúmericos y especiales";
 	var input = String(document.getElementById("pass1").value);
 	seguridad = 0;
-	let array = ["[a-z]","[A-Z]","[0-9]","[#|%|&|!|=|+|-|.|:|;|,]"];
+	let array = ["[0-9]","[a-z]","[A-Z]","[#|%|&|!|=|+|-|.|:|;|,]"];
 	let a = 1;
 	let bar=0;
 	for(a;a<=4;a++){

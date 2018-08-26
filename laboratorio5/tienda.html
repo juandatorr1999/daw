@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html>
+	<head>	
+		<meta charset="UTF-8">
+		<title>Home</title>
+		<link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/css/bootstrap.min.css" integrity="sha384-MCw98/SFnGE8fJT3GXwEOngsV7Zt27NXFoaoApmYm81iuXoPkFOJwJ8ERdknLPMO" crossorigin="anonymous">
+		<link rel="stylesheet" href="catalogo.css">
+	</head>
+	<body>
+		<header>
+			Laboratorio 5 - Home
+		</header>
+		<nav class="menu">
+			<a class="menu-item" href="index.html">Home</a>
+			<a class="menu-item" href="preguntas.html">Preguntas</a>
+			<a class="menu-item" href="tienda.html">Cátalogo</a>
+			<a class="menu-item" href="libre.html">Mata cuadráticas</a>
+		</nav>
+		<main>
+			<section>
+				<h1>Seleccione la imagen de su artículo</h1>
+				<div class="catalogo">
+					<div class="card-group">
+						<div class="card">
+								<img id="1" onclick="select(1,0,false)" class="card-img-top" src="img/1.jpg" alt="Card image cap">
+							<div class="card-body">
+							<p class="card-text">Detector de metales</p>
+							</div>
+						</div>
+						<div class="card">
+							<img id="2" onclick="select(2,1,false)" class="card-img-top" src="img/2.jpg" alt="Card image cap">
+							<div class="card-body">
+							<p class="card-text">Detector de metales 2</p>
+							</div>
+						</div>
+						<div class="card">
+							<img id="3" onclick="select(3,2,false)" class="card-img-top" src="img/3.jpg" alt="Card image cap">
+	
+							<div class="card-body">
+							<p class="card-text">Detector 3</p>
+							</div>
+						</div>
+		
+					</div>
+				</div>
+					
+				<div class="card-group">
+
+				<div class="card">
+					<div class="card-body" id="result">
+					</div>
+				</div>
+				<div class="card">
+					<div class="card-body" id="precio">
+					</div>
+				</div>
+			
+				</div>
+	
+			</section>
+		</main>
+		<footer>
+			DAW 2018 - Etan Imanol Castro Aldrete A01209675A
+		</footer>
+		<script src="tienda.js"></script>
+	</body>
+</html>
