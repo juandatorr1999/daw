@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html>
+	<head>	
+		<meta charset="UTF-8"
+		<title>Home</title>
+		<link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/css/bootstrap.min.css" integrity="sha384-MCw98/SFnGE8fJT3GXwEOngsV7Zt27NXFoaoApmYm81iuXoPkFOJwJ8ERdknLPMO" crossorigin="anonymous">
+		<link rel="stylesheet" href="estilos.css">
+	</head>
+	<body>
+		<header>
+			Laboratorio 5 - Home
+		</header>
+		<nav class="menu container-fluid">
+			<a class="menu-item" href="#">Home</a>
+			<a class="menu-item" href="preguntas.html">Preguntas</a>
+			<a class="menu-item" href="tienda.html">Cátalogo</a>
+			<a class="menu-item" href="libre.html">Mata Cuadráticas</a>
+		</nav>
+		<main>
+			<section>
+				<h2>Mata cuadráticas</h2>
+				<input step=".01" id="aa" type=number  oninput="resultado()">X^2 + <input id="bb" type=number step=".01" oninput="resultado()"> X +
+				<input id="cc" type=number  step=".01" oninput="resultado()"> =0</br> 
+				<div id="result">
+
+				</div>
+			</section>
+		</main>
+		<footer>
+			DAW 2018 - Etan Imanol Castro Aldrete A01209675A
+		</footer>
+		<script src="cuadra.js"></script>
+	</body>
+</html>
