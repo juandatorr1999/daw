@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<title>Home</title>
+		<meta charset="UTF-8">
+		<link rel="stylesheet" href="estilos.css">
+	</head>
+	<body>
+		<div class="bgtext">
+			ETAN IMANOL CASTRO ALDRETE
+		</div>
+		<div class="static">
+		<header>
+			Laboratorio 6 - Home
+		</header>
+		<nav class="menu">
+			<a class="menu-item" href="index.html">Home</a>
+			<a class="menu-item" href="preguntas.html">Preguntas</a>
+			<a class="menu-item" href="js.html">JS</a>
+			<a class="menu-item" href="/">Link de relleno</a>
+		</nav>
+		<main>
+			<section>
+				<h2>Sobre mí</h2>
+				Hola, soy Etan estudiante de 3do semestre, espero divertirme en el curso.
+			</section>
+			<section> 
+				<h2 id="titulo" class="default" onclick="change(1)">Dale click a este título para cambiar la tipografía</h2> 
+				<h2>¿Sabes qué es la <div id="palabra" onclick="dict(event,0)">metempsicosis</div>? (Clickea sobre la palabra para saber su significado y de nuevo para ocultar)</h2>
+				<div id="result" class="hidden">En algunas religiones, reencarnación del alma después de la muerte a otro ser vivo o a otro cuerpo inanimado en función de los méritos alcanzados en la existencia anterior.</div>
+			</section>
+			<section>
+				<h2 id="psico">setInterval</h2>
+			</section>
+			<section>
+				<h2>Drag and Drop</h2>
+
+<div id="div1" ondrop="drop(event)" ondragover="allowDrop(event)"></div>
+
+<img id="drag1" src="img_logo.gif" draggable="true"
+ondragstart="drag(event)" width="336" height="69">
+			</section>
+
+		</main>
+		<footer>
+			DAW 2018 - Etan Imanol Castro Aldrete A01209675
+		</footer>
+		</div>
+		<script src="control.js"></script>
+	</body>
+</html>

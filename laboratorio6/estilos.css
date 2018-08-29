@@ -1,0 +1,39 @@
+div.static{
+	z-index:1;
+	position:absolute;
+}
+
+div.hidden{
+	display:None;
+	position:inherit;
+}
+
+div.show{
+	position: absolute;
+	background-color:blue;
+	width:25%;
+}
+
+.bgtext
+{
+    top: 25px;
+    color:gray;
+    font-size:120px;
+    position:absolute;
+}
+
+h2.default{
+	font-family: "Times New Roman", Times, serif;
+
+}
+
+h2.clicked{
+	font-family: Arial;
+}
+
+#div1 {
+    width: 350px;
+    height: 70px;
+    padding: 10px;
+    border: 1px solid #aaaaaa;
+}
