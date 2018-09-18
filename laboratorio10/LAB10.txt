@@ -1,0 +1,8 @@
+¿Qué efecto tuvo esta acción?
+Nos da información sobre la tabla.
+¿Qué utilidad tiene esta manera de ejecutar los comandos de SQL?
+Que podríamos ejecutar todos los comandos a la vez.
+¿Qué relación tienen con las tablas de la base de datos? 
+Pues son los archivos que van a poblar las tablas.
+¿Qué relación tiene el contenido de este archivo (materiales.sql) con el formato en que se encuentran los datos en el archivo materiales.csv?
+Pues que sigue una estructura muy similar.
