@@ -1,0 +1,37 @@
+EJERCICIO 2
+Revisa el contenido de la tabla materiales y determina si existe alguna inconsistencia en el contenido de la tabla. ¿Cuál es? ¿A qué se debe?  Existe dos materiales con la misma clave, es decir esa clave no tiene unicidad.
+
+¿Qué ocurrió?
+Me devolvió un error que se refiere a un conflicto con el constraint al insertar
+
+¿Qué información muestra esta consulta?
+Muestra el información del constraint
+
+¿Qué sentencias utilizaste para definir las llaver primarias?
+
+ALTER TABLE nombretabla add constraint FOREIGN KEY (att1) references nombretabla2(att1)
+
+¿Qué sentencias utilizaste para definir este constraint?
+add constraint
+
+EJERCICIO 3
+¿Qué particularidad observas en los valores para clave,rfc, y número?
+Que no existe el material ni el proovedor
+¿Cómo responde el sistema a la inserción de este registro?
+Simplemente acepta el registro
+
+¿Qué significa el mensaje que emite el sistema?
+Significa que el registro no cumple con los contraint definidos para la tabla
+
+¿Qué significan las columnas de esas consultas?
+Describen la estructura del constraint
+
+EJERCICIO 4
+¿Qué uso se le está dando a GETDATE()?
+Se usa para insertar la fecha de cuando se crea el row
+¿Tiene sentido el valor del campo de cantidad?
+No
+¿Cómo responde el sistema?
+No inserta el row y manda un warming sobre ello
+¿Qué significa el mensaje? 
+Que la sentencia usada crea un row inválido
