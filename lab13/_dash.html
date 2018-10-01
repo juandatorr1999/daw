@@ -1,0 +1,99 @@
+<!DOCTYPE html>
+<!-- saved from url=(0049)http://getbootstrap.com/docs/4.1/examples/album/# -->
+<html lang="en"><head><meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+    
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+    <meta name="description" content="">
+    <meta name="author" content="">
+    <link rel="icon" href="http://getbootstrap.com/favicon.ico">
+
+    <title>Lab 13</title>
+
+    <!-- Bootstrap core CSS -->
+    <link href="static/bootstrap.min.css" rel="stylesheet">
+
+    <!-- Custom styles for this template -->
+    <link href="static/album.css" rel="stylesheet">
+  </head>
+
+  <body>
+
+    <header>
+      <div class="bg-dark collapse" id="navbarHeader" style="">
+      </div>
+    </header>
+
+    <main role="main">
+
+      <section class="jumbotron text-center">
+        <div class="container">
+          <h1 class="jumbotron-heading">Subir fotos</h1>
+	  <form method="POST" action="index.php" enctype="multipart/form-data">
+		  <input type="file" name="file" >
+		  <input type="submit" name="enviar">
+	  </form>
+            <a href="logout.php" class="btn btn-secondary my-2">Salir</a>
+          </p>
+        </div>
+	<div class="section" id="preguntas">
+                <h5>
+                    <i class="small mdi-action-question-answer"></i>
+                    Preguntas a responder
+                  </h5>
+                <ul class="collection">
+                    <li class="collection-item">¿Por qué es importante hacer un <code>session_unset()</code> y luego un <code>session_destroy()</code>? Para evitar conflictos entre las sesiones</li>
+                    <li class="collection-item">¿Cuál es la diferencia entre una variable de sesión y una cookie?Las variables de sesión se guardan en el server mientras que las cookies en el cliente</li>
+                    <li class="collection-item">¿Qué técnicas se utilizan en sitios como facebook para que el usuario no sobreescriba sus fotos en el sistema de archivos cuando sube una foto con el mismo nombre?Su nombre debe ser el hash de la foto con salt de fecha</li>
+                    <li class="collection-item">¿Qué es CSRF y cómo puede prevenirse?Es Cross-site request forgery  básicamente hascer peticiones POST o GET fuera del sitio, con un token</li>
+                </ul>
+                <div class="divider"></div>
+            </div>
+      </section>
+
+      <div class="album py-5 bg-light">
+        <div class="container">
+
+          <div class="row">
+	<?
+	       if(isset($imagenes))
+	       {
+
+	       foreach($imagenes as $image)
+	       {
+	       echo'
+            <div class="col-md-4">
+              <div class="card mb-4 shadow-sm">
+                <img class="card-img-top" data-src="holder.js/100px225?theme=thumb&amp;bg=55595c&amp;fg=eceeef&amp;text=Thumbnail" alt="Thumbnail [100%x225]" style="height: 225px; width: 100%; display: block;" src="'.$image.'" data-holder-rendered="true">
+              </div>
+	    </div>';
+	    }
+	    }
+	    ?>
+
+          </div>
+        </div>
+      </div>
+
+    </main>
+
+    <footer class="text-muted">
+      <div class="container">
+        <p class="float-right">
+          <a href="http://getbootstrap.com/docs/4.1/examples/album/#">Back to top</a>
+        </p>
+        <p>Album example is © Bootstrap, but please download and customize it for yourself!</p>
+        <p>New to Bootstrap? <a href="http://getbootstrap.com/docs/4.1/">Visit the homepage</a> or read our <a href="http://getbootstrap.com/docs/4.1/getting-started/">getting started guide</a>.</p>
+      </div>
+    </footer>
+
+    <!-- Bootstrap core JavaScript
+    ================================================== -->
+    <!-- Placed at the end of the document so the pages load faster -->
+    <script src="./Album example for Bootstrap_files/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
+    <script>window.jQuery || document.write('<script src="../../assets/js/vendor/jquery-slim.min.js"><\/script>')</script>
+    <script src="./Album example for Bootstrap_files/popper.min.js"></script>
+    <script src="./Album example for Bootstrap_files/bootstrap.min.js"></script>
+    <script src="./Album example for Bootstrap_files/holder.min.js"></script>
+  
+
+<svg xmlns="http://www.w3.org/2000/svg" width="348" height="225" viewBox="0 0 348 225" preserveAspectRatio="none" style="display: none; visibility: hidden; position: absolute; top: -100%; left: -100%;"><defs><style type="text/css"></style></defs><text x="0" y="17" style="font-weight:bold;font-size:17pt;font-family:Arial, Helvetica, Open Sans, sans-serif">Thumbnail</text></svg></body></html>
