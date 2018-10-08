@@ -1,0 +1,4 @@
+{
+	"database":{"hostname":"127.0.0.1", "user":"roota", "password":"das", "port":"3306","database":"cbtis118"},
+	"files":{"directoy":"static","css":"css","js":"js","templates":"templates"}
+}

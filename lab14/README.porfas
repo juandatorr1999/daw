@@ -1,0 +1,8 @@
+# cbtis118
+#
+# Hola me dijo lalo que me era válido avanzar en el proyecto para este lab
+# Traté de crear un orm básico
+#
+# Para revisar debes  crear una db con el nombre cbtis118 como lo dice en src/config.json
+# Despues debes exportar user.sql en la carpeta, ignora todo lo fuera de src ya que están los intentos de test unitarios xd 
+#
