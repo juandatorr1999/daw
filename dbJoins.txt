@@ -1,0 +1,31 @@
+Alumnos
+Cursos
+Inscritos
+
+CREATE TABLE IF NOT EXISTS Alumnos(
+	matricula varchar(255) NOT NULL PRIMARY KEY,
+	nombre varchar(255) NOT NULL
+);
+CRETAE TABLE IF NOT EXISTS Cursos(
+	clave int NOT NULL  PRIMARY KEY,
+	nombre varchar(255) NOT NULL
+);
+CREATE TABLE IF NOT EXISTS Inscritos(
+	matricula varchar(255) NOT NULL,
+	clave numeric(10) NOT NULL,
+	ADD FOREIGN KEY(matricula) REFERENCES Alumnos.matricula,
+	ADD FOREIGN KEY(clave) REFERENCES Cursos.clave
+);
+
+// Inner 
+
+SELECT Cursos.nombre, Alumno.Nombre FROM Incritos INNER JOIN Cursos ON Cursos.clave = Alumnos.clave INNER JOIN Alumnos ON Alumnos.Matricula = Inscritos.Matricula;
+
+// Outer
+
+SELECT Cursos.nombre, Alumno.Nombre FROM Incritos full OUTER JOIN Cursos ON Cursos.clave = Alumnos.clave OUTER JOIN Alumnos ON Alumnos.Matricula = Inscritos.Matricula;
+
+SELECT Cursos.nombre, Alumno.Nombre FROM Incritos RIGTH JOIN Cursos ON Cursos.clave = Alumnos.clave OUTER JOIN Alumnos ON Alumnos.Matricula = Inscritos.Matricula;
+
+SELECT Cursos.nombre, Alumno.Nombre FROM Incritos LEFT JOIN Cursos ON Cursos.clave = Alumnos.clave OUTER JOIN Alumnos ON Alumnos.Matricula = Inscritos.Matricula;
+
